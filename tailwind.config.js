@@ -1,10 +1,7 @@
 const num = Array.from({length: 12}, (_, i) => i + 1)
 const whitelist = []
-num.map((x) => {
-  whitelist.push('translate-x-' + x)
-  whitelist.push('-translate-x-' + x)
-  whitelist.push('translate-y-' + x)
-  whitelist.push('-translate-y-' + x)
+num.map((n) => {
+  whitelist.push('grid-cols-' + n)
 })
 
 module.exports = {
