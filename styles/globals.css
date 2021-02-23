@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: bolder;
+    font-display: swap;
+    text-transform: uppercase;
+    src: url("/gilroy.otf") format("opentype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #0066FF;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+    }
+}

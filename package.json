@@ -1,6 +1,7 @@
 {
-  "name": "perfect-next-theme",
+  "name": "claire-website",
   "version": "0.1.0",
+  "author": "Sarthak Mohanty<sarthak@sarthakmohanty.me>",
   "private": true,
   "scripts": {
     "dev": "next dev",
