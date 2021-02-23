@@ -22,3 +22,7 @@ body {
         background-color: black;
     }
 }
+
+.heading {
+    @apply font-gilroy uppercase text-6xl sm:text-7xl md:text-8xl
+}

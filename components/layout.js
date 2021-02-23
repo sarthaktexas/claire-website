@@ -1,11 +1,11 @@
 import HeadObject from '../components/head'
 import Nav from '../components/nav'
 
-export default function Layout({ headChildren, children }) {
+export default function Layout({ headChildren, children, active }) {
   return (
     <div>
-          <HeadObject>{headChildren}</HeadObject>
-      <Nav />
+      <HeadObject>{headChildren}</HeadObject>
+      <Nav active={active}/>
       <main className="mt-6 sm:mt-12 md:mt-16 flex flex-col text-white pl-12 md:pl-20">
         {children}
       </main>

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <HeadObject />
-      <Nav />
+      <Nav active="Home" />
       <main className="mt-6 sm:mt-12 md:mt-16 flex flex-col text-white pl-12 md:pl-20">
         <section className="heading" aria-hidden="true">
           <div>Claire Wang<div className="inline opacity-50">.</div></div>

@@ -4,13 +4,14 @@ import { CgDarkMode } from 'react-icons/cg'
 const colors = require('../lib/colors.json')
 
 const links = [
+    { label: "Home", href: "/" },
     { label: "Resume", href: "https://www.notion.so/nerdfighteria/Claire-Wang-5a682aa1023640c4914bf7e16bf59096" },
     { label: "Scrapbook", href: "https://scrapbook.hackclub.com/clairebookworm/" },
     { label: "Gallery", href: "/gallery" },
     { label: "Writing", href: "/writing" },
 ]
 
-export default function Nav() {
+export default function Nav({active}) {
     useEffect(() => {
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
             document.body.style.backgroundColor = colors[~~(Math.random() * colors.length)];
@@ -36,7 +37,7 @@ export default function Nav() {
                     {links.map(({ href, label }) => (
                         <li key={`${href}${label}`}>
                             <Link href={href}>
-                                <a className="font-inter px-4 py-2 rounded hover:bg-white hover:bg-opacity-10">
+                                <a className={`font-inter px-4 py-2 rounded hover:bg-white hover:bg-opacity-10 ${active === label ? 'font-bold bg-white bg-opacity-10' : ''}`}>
                                     {label}
                                 </a>
                             </Link>
