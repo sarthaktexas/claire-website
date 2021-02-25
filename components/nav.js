@@ -7,8 +7,8 @@ const links = [
     { label: "Home", href: "/" },
     { label: "Resume", href: "https://www.notion.so/nerdfighteria/Claire-Wang-5a682aa1023640c4914bf7e16bf59096" },
     { label: "Scrapbook", href: "https://scrapbook.hackclub.com/clairebookworm/" },
-    { label: "Gallery", href: "/gallery" },
-    { label: "Writing", href: "/writing" },
+    //{ label: "Gallery", href: "/gallery" },
+    //{ label: "Writing", href: "/writing" },
 ]
 
 export default function Nav({active}) {
